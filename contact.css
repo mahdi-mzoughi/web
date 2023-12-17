@@ -1,95 +1,98 @@
-body {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset some default styles */
+body, h1, h2, p, img, label, input, select, textarea, a, button {
     margin: 0;
     padding: 0;
-    background-color: #e8f8ec; /* Light Green Background */
-    color: #495057;
+    box-sizing: border-box;
 }
 
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
 header {
-    background-color: #28a745; /* Dark Green Header */
-    color: white;
-    text-align: center;
-    padding: 40px;
-    border-radius: 0 0 20px 20px;
+    background-color: #4CAF50; /* Green */
+    color: #fff;
+    padding: 10px;
 }
 
-h1 {
-    margin: 0;
-}
-
+/* Section styles */
 section {
+    max-width: 600px;
     margin: 20px auto;
-    max-width: 800px;
-    background-color: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Image styles */
 img {
     max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.contact-info {
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.contact-info p {
-    margin: 10px 0;
-}
-
-form {
-    text-align: left;
-}
-
+/* Form styles */
 label {
     display: block;
-    margin-top: 15px;
+    margin: 10px 0;
+    font-weight: bold;
 }
 
-input, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    border: 1px solid #6c757d; /* Dark Gray Border */
-    border-radius: 5px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #4CAF50; /* Green */
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #45a049; /* Darker Green */
+}
+
+select {
+    width: calc(100% - 22px);
+}
+
+/* Button styles */
+button,
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 button {
-    background-color: #28a745; /* Dark Green Button */
-    color: white;
+    background-color: #4CAF50; /* Green */
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #218838; /* Slightly Darker Green on Hover */
+button:hover,
+a:hover {
+    background-color: #45a049; /* Darker Green */
 }
 
+/* Back button */
 a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    text-align: center;
-    background-color: #28a745; /* Dark Green Link */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    background-color: #4CAF50; /* Green */
+    margin-right: 10px;
 }
 
 a:hover {
-    background-color: #218838; /* Slightly Darker Green on Hover */
+    background-color: #45a049; /* Darker Green */
 }

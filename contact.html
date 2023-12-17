@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="contact.css">
-
+    <script src="contact.js" defer></script>
     <style>
         body {
             text-align: center;
@@ -29,16 +29,30 @@
         <p>Num : 99769831 :</p>
         <p>Email : mahdibenammor@gmail.com</p>
         
-        <label for="name">Nom</label>
-        <input type="text" id="name" required minlength="3" maxlength="30" size="20"><br><br>
-        
-        <label for="firstName">Prénom</label>
-        <input type="text" id="firstName" required minlength="4" maxlength="30" size="20"><br><br>
-        
-        <label for="comment">Message</label>
-        <textarea name="comment" id="comment" cols="30" rows="5"></textarea><br>
-        
-        <a href="index.html">Retour</a>
+        <form id="contactForm">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="contact@gmail.com" required>
+
+            <label for="name">Numéro de téléphone</label>
+            <input type="text" id="name" name="name" required minlength="3" maxlength="30" size="20"><br><br>
+
+            <label for="company">Nom de la société</label>
+            <input type="text" id="company" name="company" required minlength="3" maxlength="30" size="20"><br><br>
+            
+            <label for="comment">Message</label>
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea><br>
+            
+            <label for="city">Ville :</label>
+            <select name="city" id="city">
+                <option value="Ariana">Ariana</option>
+                <option value="Tunis">Tunis</option>
+                <option value="BenArous">Ben Arous</option>  
+                <option value="Bizerte">Bizerte</option>
+            </select><br><br>
+
+            <button type="button" onclick="validateForm()">Confirmer</button>
+            <a href="index.html">Retour</a>
+        </form>
     </section>
 </body>
 </html>
